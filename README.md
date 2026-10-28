@@ -2,17 +2,21 @@
 ![Status: Maintained](https://img.shields.io/badge/Status-Maintained-brightgreen?style=for-the-badge)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-Este repositorio contiene una colección de scripts en **Python** diseñados para la automatización, procesamiento y optimización técnica de activos visuales destinados a sitios web de alto rendimiento. 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pillow](https://img.shields.io/badge/Pillow-013243?style=for-the-badge&logo=python&logoColor=white)
+![Lighthouse](https://img.shields.io/badge/Google_Lighthouse-F44B21?style=for-the-badge&logo=google-lighthouse&logoColor=white)
+
+Colección de scripts en **Python** diseñados para la automatización, procesamiento y optimización técnica de activos visuales destinados a sitios web y dashboards de alto rendimiento.
 
 El objetivo principal es garantizar que las imágenes cumplan con los estándares de **Google Lighthouse**, equilibrando una carga ultra-rápida sin sacrificar la nitidez en pantallas de alta densidad (Retina).
 
 ## 🛠️ Funcionalidades Principales
 
-* **Conversión a WebP con Analíticas**: Transformación de archivos PNG a WebP utilizando compresión *lossless* y reportando el ahorro exacto en MB y porcentaje.
-* **Tratamiento de Transparencias**: Algoritmo que detecta fondos blancos (píxeles con valores RGB > 240) y los convierte automáticamente en canales alfa transparentes.
-* **Optimización (Lighthouse Ready)**: Ajuste de dimensiones basado en el ancho de renderizado real del DOM (DPR 1.2x y 2x) para maximizar el performance.
-* **Generación de Favicons**: Creación automatizada de `apple-touch-icon` (180x180) y favicons estándar (32x32, 16x16) a partir de un archivo maestro `.ico`.
-* **Compresión de Perfil**: Script dedicado para fotos personales, reduciendo drásticamente el peso de archivos originales de alta resolución a formatos web eficientes.
+* **Conversión a WebP con Analíticas:** Transformación de archivos PNG a WebP utilizando compresión *lossless* y reportando el ahorro exacto en MB y porcentaje.
+* **Tratamiento de Transparencias:** Algoritmo de detección de fondos blancos (píxeles con RGB > 240) para su conversión automática a canales alfa transparentes.
+* **Optimización (Lighthouse Ready):** Ajuste de dimensiones basado en el ancho de renderizado real del DOM (DPR 1.2x y 2x) para maximizar el rendimiento.
+* **Generación de Favicons:** Creación automatizada de `apple-touch-icon` (180x180) y favicons estándar (32x32, 16x16) a partir de un archivo `.ico`.
+* **Compresión de Perfil:** Script dedicado para fotos personales, reduciendo drásticamente el peso de archivos originales de alta resolución a formatos web eficientes.
 
 ---
 
@@ -33,23 +37,23 @@ El objetivo principal es garantizar que las imágenes cumplan con los estándare
 ## 🚀 Instalación y Uso
 
 ### 1. Requisitos
-Es necesario tener instalado Python 3.x y la biblioteca **Pillow**.
+Requiere Python 3.x y la biblioteca **Pillow**
 
 ```bash
 pip install Pillow
 ```
 
 ### 2. Configuración de Rutas: 
-Abre el script que desees utilizar y modifica las variables de ruta (ej. img_folder o base_path) con las direcciones de tus carpetas locales.
+Edita las variables de directorio de entrada y salida en el script que desees ejecutar (se recomienda utilizar rutas relativas)
 ```python
-# Ejemplo de configuración interna
-ORIGEN = r'C:\Users\Juan\OneDrive\Escritorio\Logos'
-DESTINO = r'C:\Users\Juan\OneDrive\Escritorio\Logos_Optimized'
+# Ejemplo de configuración de rutas
+ORIGEN = "./Logos"
+DESTINO = "./Logos_Optimized"
 ```
 ### 3. Ejecución: 
-Corre el script desde tu terminal o IDE:
+Ejecuta el script deseado desde la terminal
 ```bash
-# Ejemplo para optimizar logos según dimensiones de Lighthouse
+# Ejemplo: optimización basada en métricas de Lighthouse
 python optimizar_logos_3.py
 ```
 

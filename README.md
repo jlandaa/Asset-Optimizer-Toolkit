@@ -1,4 +1,4 @@
-# AssetOptimizer-Toolkit 🚀
+# Asset-Optimizer-Toolkit 🚀
 ![Status: Maintained](https://img.shields.io/badge/Status-Maintained-brightgreen?style=for-the-badge)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
@@ -58,11 +58,6 @@ python optimizar_logos_3.py
 * **Procesamiento de Imagen:** Pillow (PIL)
 * **Formatos Soportados:** WEBP, PNG, JPG, ICO.
 
-## 👨‍💻 Autor
-Juan Manuel Landa
-
-* Ingeniero en Informática especializado en Business Intelligence, SQL y Data Analytics.
-
-* Residente en Quilmes, Buenos Aires, Argentina.
-
-* [LinkedIn](https://www.linkedin.com/in/juan-manuel-landa/) | [Portfolio ](https://juan-manuel-landa.netlify.app/)
+---
+👨‍💻 **Juan Manuel Landa** — *Computer Engineer | Data Analyst & BI Consultant*  
+🔗 [LinkedIn](https://ar.linkedin.com/in/juan-manuel-landa/en) • 🌐 [Portfolio](https://juan-manuel-landa.netlify.app/) • ✉️ [Contacto](mailto:jmlanda93@gmail.com)
